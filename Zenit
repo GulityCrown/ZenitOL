@@ -1,1 +1,110 @@
+Zenit A:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zenit
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(8);
+        }
+    }
+}
+
+
+
+
+
+
+Zenit B:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zenit
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int nastupenia = Convert.ToInt32(Console.ReadLine());
+            int vAutobuse = 0;
+            int vystupenia = Convert.ToInt32(Console.ReadLine());
+
+            vAutobuse += nastupenia - vystupenia;
+            if (vAutobuse <= 1000 && vAutobuse >= 1)
+            {
+                if (vystupenia > nastupenia)
+                {
+                    Console.WriteLine("error");
+                }
+
+            }
+            else if (vAutobuse < 0)
+            {
+                Console.WriteLine("error, výsledok je neplatný: ");
+            }
+            Console.WriteLine(vAutobuse);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+Zenit C:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zenit
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string nieco = "";
+            nieco = Console.ReadLine();
+
+
+            int pZatvoriek = 0;
+
+
+
+                for (var i = 0; i < nieco.Length; i++)
+                {
+                    if (nieco[i] == '<' || nieco[i] == '>')
+                    {
+                        pZatvoriek++;
+                    }
+                }
+
+
+            if(pZatvoriek % 2 != 0)
+            {
+                Console.WriteLine("had");
+           }
+            else
+            {
+                Console.WriteLine("dážďovka");
+            }
+
+        }
+
+    }
+}
+
 
